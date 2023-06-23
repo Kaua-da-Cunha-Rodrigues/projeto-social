@@ -1,37 +1,50 @@
 
-html{
-    background-image: url("../img/fundo-madeira.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
+*{
+    margin: 0px;
+    padding: 0px;
 }
-
-a{
-    color: transparent;
-}
-img.icon{
-    width: 40px;
-    border-radius: 50%;
+html, body{
+    width: 100vw;
+    height: 100vh;
+    background-color: red;
 }
 body{
-    width: 98%;
+    background: url(../img/fundo-madeira.jpg) no-repeat top center;
+    background-size: cover;
+    background-attachment: fixed;
 }
-body, div.container, div.nav{
-    margin: 0;
-    padding: 0;
-}
-div.container{
+main{
     display: flex;
     justify-content: space-between;
+    position: relative;
+    height: 100vh;
+    float: left;
 }
-div.container div.nav ul li{
-    list-style: none;
+section.telefone{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: url(../img/frame-iphone.png) no-repeat;
+
+    width: 311px;
+    height: 627px;
 }
-div.celular{
-    width: 100%;
-    display: flex;
-    justify-content: center;
+section.nav{
+    width: 100vw;
+    float: right;
+}
+section.nav ul{
+    float: right;
     align-items: center;
+}
+section.nav ul li{
+    list-style: none;
+    margin: 10px;
+    padding: 5px 8px;
+}
+section.nav img{
+    width: 40px;
+    border-radius: 50%;
 }
 
