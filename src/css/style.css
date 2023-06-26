@@ -6,7 +6,6 @@
 html, body{
     width: 100vw;
     height: 100vh;
-    background-color: red;
 }
 body{
     background: url(../img/fundo-madeira.jpg) no-repeat top center;
@@ -29,6 +28,16 @@ section.telefone{
 
     width: 311px;
     height: 627px;
+}
+section.telefone #tela{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -49.5%);
+
+    width: 269px;
+    height: 474px;
+    border-radius: 4px;
 }
 section.nav{
     width: 100vw;
