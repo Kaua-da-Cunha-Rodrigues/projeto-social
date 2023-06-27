@@ -41,19 +41,23 @@ section.telefone #tela{
 }
 section.nav{
     width: 100vw;
-    float: right;
+}
+section.nav img{
+    width: 50px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.404);
+    transition: 0.2s;
+}
+section.nav img:hover{
+    transform: scale(1.15);
 }
 section.nav ul{
     float: right;
-    align-items: center;
 }
 section.nav ul li{
     list-style: none;
     margin: 10px;
     padding: 5px 8px;
 }
-section.nav img{
-    width: 40px;
-    border-radius: 50%;
-}
+
 
